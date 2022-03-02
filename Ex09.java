@@ -10,7 +10,7 @@ public class Ex09{
 
         //entrada de dados
 
-        salario = Double.parseDouble(JOptionPane.showInputDialog("Informe o salário"));
+        salario = Double.parseDouble(JOptionPane.showInputDialog("Informe o salario"));
         reajuste = Double.parseDouble(JOptionPane.showInputDialog("Qual o percentual de ajuste?"));
 
         //processamento

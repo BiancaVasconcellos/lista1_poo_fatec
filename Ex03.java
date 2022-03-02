@@ -11,7 +11,7 @@ public class Ex03 {
         //entrada de dados
 
         preco_unitario = Double.parseDouble(JOptionPane.showInputDialog("Qual o valor do preco unitario?"));
-        quantidade_vendida = Double.parseDouble(JOptionPane.showInputDialog("Quantas peças foram vendidas?"));
+        quantidade_vendida = Double.parseDouble(JOptionPane.showInputDialog("Quantas pecas foram vendidas?"));
 
         //processamento
 

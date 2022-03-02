@@ -5,8 +5,7 @@ public class Ex08{
 
         //declaração de variaveis
 
-        double total_eleitores, votos_brancos, votos_nulos, votos_validos, porcentagem_branco,
-        porcentagem_nulos, porcentagem_validos;
+        Double total_eleitores, votos_brancos, votos_nulos, votos_validos;
         
 
         //entrada de dados
@@ -19,23 +18,18 @@ public class Ex08{
        
         //processamento
 
-        porcentagem_branco = 100 * votos_brancos/total_eleitores;
-        porcentagem_nulos = 100 * votos_nulos/total_eleitores;
-        porcentagem_validos = 100 * votos_validos/total_eleitores;  
+        votos_brancos = (votos_brancos/total_eleitores) * 100; 
+        votos_nulos = (votos_nulos/total_eleitores) * 100;
+        votos_validos = (votos_validos/total_eleitores) * 100;
         
         //saida
 
         
-        String s = String.format(
-            "Votos Validos: %f", porcentagem_validos, 
-            "Votos Nulos: %f", porcentagem_nulos,
-            "Votos em Branco: %f", porcentagem_branco
+        String resultado = String.format(       
+            "%.0f eleitores: Percentual: Votos Brancos: %.0f%%, Votos Nulos: %.0f%%, Votos Validos: %.0f%%", 
+            total_eleitores, votos_brancos, votos_nulos, votos_validos
         );
-        JOptionPane.showMessageDialog(null, s);
-        JOptionPane.showMessageDialog(null, porcentagem_nulos);
-        JOptionPane.showMessageDialog(null, porcentagem_branco);
 
-
+        JOptionPane.showMessageDialog(null, resultado);  
     }
-    
-}    
+}

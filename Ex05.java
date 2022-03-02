@@ -5,13 +5,13 @@ public class Ex05 {
 
         //declaração de variaveis
 
-        double base, altura, area;
+        Integer base, altura, area;
         
 
         //entrada de dados
 
-        base = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor da base"));
-        altura = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor da altura"));
+        base = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor da base"));
+        altura = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor da altura"));
        
         //processamento
 
@@ -20,7 +20,7 @@ public class Ex05 {
         //saida
 
         String s = String.format(
-            "O valor da area: %.2f.",
+            "O valor da area: %d",
             area
         );
         JOptionPane.showMessageDialog(null, s);

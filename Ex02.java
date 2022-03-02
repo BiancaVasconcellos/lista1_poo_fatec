@@ -5,14 +5,14 @@ public class Ex02 {
 
         //declaração de variáveis
 
-        double numero1, numero2, numero3, numero4, resultado;
+        Integer numero1, numero2, numero3, numero4, resultado;
 
         //entrada de dados
 
-        numero1=Double.parseDouble(JOptionPane.showInputDialog("Digite o primeiro numero"));
-        numero2=Double.parseDouble(JOptionPane.showInputDialog("Digite o segundo numero"));
-        numero3=Double.parseDouble(JOptionPane.showInputDialog("Digite o terceiro numero"));
-        numero4=Double.parseDouble(JOptionPane.showInputDialog("Digite o quarto numero"));
+        numero1=Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro numero"));
+        numero2=Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo numero"));
+        numero3=Integer.parseInt(JOptionPane.showInputDialog("Digite o terceiro numero"));
+        numero4=Integer.parseInt(JOptionPane.showInputDialog("Digite o quarto numero"));
 
         //processamento
  
@@ -26,7 +26,7 @@ public class Ex02 {
         //saida
 
         String s = String.format(
-            "O valor da soma: %.2f.",
+            "O valor da soma: %d.",
             resultado
         );
         JOptionPane.showMessageDialog(null, s);

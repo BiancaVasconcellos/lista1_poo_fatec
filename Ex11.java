@@ -22,7 +22,7 @@ public class Ex11{
         //saida
 
         String s = String.format(
-            "Novo salario: %s",
+            "Novo salario: %.2f.",
             novo_salario
         );
         JOptionPane.showMessageDialog(null, s);

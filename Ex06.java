@@ -5,12 +5,12 @@ public class Ex06{
 
         //declaração de variaveis
 
-        double idade, anos;
+        Integer idade, anos;
         
 
         //entrada de dados
 
-        idade = Double.parseDouble(JOptionPane.showInputDialog("Qual a sua idade?"));
+        idade = Integer.parseInt(JOptionPane.showInputDialog("Qual a sua idade?"));
        
         //processamento
 
@@ -19,7 +19,7 @@ public class Ex06{
         //saida
 
         String s = String.format(
-            "Idade em dias: %s",
+            "Idade em dias: %d.",
             anos
         );
         JOptionPane.showMessageDialog(null, s);

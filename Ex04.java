@@ -5,12 +5,12 @@ public class Ex04 {
 
         //declaração de variaveis
 
-        double numero, resultado;
+        Integer numero, resultado;
         
 
         //entrada de dados
 
-        numero = Double.parseDouble(JOptionPane.showInputDialog("Digite um numero?"));
+        numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero?"));
 
         //processamento
 
@@ -19,7 +19,7 @@ public class Ex04 {
         //saida
 
         String s = String.format(
-            "O valor da soma: %.2f.",
+            "O valor da soma: %d",
             resultado
         );
         JOptionPane.showMessageDialog(null, s);
