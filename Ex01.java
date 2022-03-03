@@ -21,11 +21,11 @@ public class Ex01 {
 
        
         String s = String.format(
-            "O valor do dolar em reais e: %.2f.",
+            "Qual a cotação?: %.2f.",
             resultado
         );
         JOptionPane.showMessageDialog(null, s);
-         
+        
          
     }
     
